@@ -1,4 +1,28 @@
-# code-with-quarkus Project
+# Referência
+
+## Youtube
+1. Vinicius Ferraz [https://www.youtube.com/watch?v=lSR5nyqE09c]
+1. Github [https://github.com/viniciusfcf/semana-lives-quarkus.git]
+
+## Centralizador de Log - Greylog | ElasticSearch
+1. Plugin Logging GELF (extensão)
+1. Stack Docker Compose (Disponível no Github)
+    1. Greylog (streams)
+    1. ElasticSearch
+    1. MongoDB
+1. Configuração da APP habilitando o GELF
+    1. quarkus.log.handler.gelf.enabled=true
+    1. quarkus.log.handler.gelf.host=localhost
+    1. quarkus.log.handler.gelf.port=12201
+1. Subir stack
+    1. incrementar memória 
+1. Criar Steam via UDP 
+    1. referência em graylog-config.sh : curl -H ...
+
+
+
+
+# 
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
@@ -59,23 +83,3 @@ Easily start your RESTful Web Services
 
 [Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
 
-# Referência
-
-## Youtube
-1. Vinicius Ferraz [https://www.youtube.com/watch?v=lSR5nyqE09c]
-1. Github [https://github.com/viniciusfcf/semana-lives-quarkus.git]
-
-## Centralizador de Log - Greylog | ElasticSearch
-1. Plugin Logging GELF (extensão)
-1. Stack Docker Compose (Disponível no Github)
-    1. Greylog (streams)
-    1. ElasticSearch
-    1. MongoDB
-1. Configuração da APP habilitando o GELF
-    1. quarkus.log.handler.gelf.enabled=true
-    1. quarkus.log.handler.gelf.host=localhost
-    1. quarkus.log.handler.gelf.port=12201
-1. Subir stack
-    1. incrementar memória 
-1. Criar Steam via UDP 
-    1. referência em graylog-config.sh : curl -H ...
